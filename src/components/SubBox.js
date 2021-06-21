@@ -11,16 +11,17 @@ function SubBox() {
     <main>
       <div className='box'>
         <div className='title'>
-          <h1>un<strong>Bun</strong>dle</h1>
+          <h1 className='light-header'>un<strong className='strong-header'>Bun</strong>dle</h1>
+          <p className='newsletter-title'>ART NEWSLETTER</p>
         </div>
-        <h5>Subscribe to our newsletter</h5>
-        <h3>Enter your email address to subscribe<strong>*</strong></h3>
+        <h5><strong>Your essential bi-weekly guide to the art world - straight to your inbox</strong></h5>
+        <h5>Sign up to UnBundle - Art news and buying opportunities in 5 mins or less</h5>
         <MailchimpSubscribe
           url={url}
           render={({ subscribe, status, message }) => (
             <div>
               <SimpleForm onSubmitted={formData => subscribe(formData)} />
-              {status === 'sending' && <div style={{ color: 'blue' }}>sending...</div>}
+              {status === 'sending' && <div style={{ color: 'green' }}>sending...</div>}
               {status === 'error' && <div style={{ color: 'red' }} dangerouslySetInnerHTML={{ __html: message }}/>}
               {status === 'success' && <div style={{ color: 'green' }}>Subscribed !</div>}
             </div>
