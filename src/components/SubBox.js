@@ -1,6 +1,6 @@
 import MailchimpSubscribe from 'react-mailchimp-subscribe'
 
-const url = '//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn'
+const url = '//bun@boisseau.co.uk.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn'
 
 // simplest form (only email)
 const SimpleForm = () => <MailchimpSubscribe url={url}/>
