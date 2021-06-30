@@ -7,12 +7,8 @@ $sig-orange: #ff6b00;
   box-sizing: border-box;
 } 
 
-main {
-  // background-color: orange;
-}
-
 .box {
-  margin: 30% auto;
+  margin: 5% auto;
   width: 50%;
   border: 2px white dashed;
   text-align: center;
@@ -36,6 +32,7 @@ main {
 }
 
 body {
+  height: 45vh;
   color: black;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: url('https://images.unsplash.com/photo-1522878308970-972ec5eedc0d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80');
@@ -72,4 +69,26 @@ input {
   margin-top: -60px;
   font-size: 32px;
   color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+  .box {
+    margin: 30% auto;
+    width: 80%;
+  }
+  .title {
+    h1 {
+      font-size: 40px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 100;
+      strong {
+        font-weight: 600;      
+      }
+    }
+  }
+  .newsletter-title {
+    margin-top: -40px;
+    font-size: 20px;
+    color: grey;
+  }
 }
